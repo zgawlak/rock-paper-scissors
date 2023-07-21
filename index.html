@@ -1,45 +1,73 @@
 <script>
+    let playerScore = 0;
+    let computerScore = 0;
+    let tie = 0;
     function getComputerChoice() {
         let choices = ['Rock', 'Paper', 'Scissors'];
         return computerChoice = choices[(Math.floor(Math.random() * choices.length))];
     }
 
     function playRound(playerSelection, computerSelection) {
+        let result = "";
         if (playerSelection.toLowerCase() === 'rock') {
             if (computerSelection === 'Rock') {
-                return "It's a tie!";
+                result = "It's a tie!";
+                tie++;
             }
-            else if (computerSelection === 'Scissors') {
-                return "You Win! Rock beats scissors";
+            else if (computerSelection === 'Paper') {
+                result = "You Lose! Paper beats scissors";
+                computerScore++;
             }
             else {
-                return "You Lose! Paper beats scissors";
+                result = "You Win! Rock beats scissors";
+                playerScore++;
             }
         }
         else if (playerSelection.toLowerCase() === 'scissors') {
             if (computerSelection === 'Scissors') {
-                return "It's a tie!";
+                result = "It's a tie!";
+                tie++;
             }
             else if (computerSelection === 'Rock') {
-                return "You Lose! Scissors beats rock";
+                result = "You Lose! Scissors beats rock";
+                computerScore++;
             }
             else {
-                return "You Win! Scissors beats paper";
+                result = "You Win! Scissors beats paper";
+                playerScore++;
             }
         }
         else if (playerSelection.toLowerCase() === 'paper') {
             if (computerSelection === 'Paper') {
-                return "It's a tie!";
+                result = "It's a tie!";
+                tie++;
             }
             else if (computerSelection === 'Scissors') {
-                return "You Lose! Scissors beats paper";
+                result = "You Lose! Scissors beats paper";
+                computerScore++;
             }
             else {
-                return "You Win! Paper beats rock";
+                result = "You Win! Paper beats rock";
+                playerScore++;
             }
         }
         else {
-            return "Invalid choice";
+            result = "Invalid choice";
         }
+        return result;
     }
+
+
+    function game() {
+        playerScore = 0;
+        computerScore = 0;
+        tie = 0;
+        for (let i = 0; i < 5; i++) {
+            let playerSelection = prompt("Choose rock, paper, or scissors:");
+            console.log(playRound(playerSelection, getComputerChoice()));
+        }
+        console.log("Final score: \nPlayer - " + playerScore + "\nComputer - " + computerScore + "\nTie - " + tie);
+    }
+
+    game();
 </script>
