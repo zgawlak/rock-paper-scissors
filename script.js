@@ -1,6 +1,6 @@
 let playerScore;
 let computerScore;
-let tie;
+
 function getComputerChoice() {
     const choices = ['rock', 'paper', 'scissors'];
     return computerChoice = choices[(Math.floor(Math.random() * choices.length))];
@@ -11,7 +11,6 @@ function playRound(playerSelection, computerSelection) {
     let result = "";
     if (playerSelectionLower === computerSelection) {
         result = "It's a tie!";
-        tie++;
     }
     else if (playerSelectionLower === 'rock') {
         if (computerSelection === 'paper') {
