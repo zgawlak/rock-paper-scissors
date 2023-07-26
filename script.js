@@ -5,6 +5,8 @@ let rockButton = document.querySelector('.rock');
 let paperButton = document.querySelector('.paper');
 let scissorsButton = document.querySelector('.scissors');
 
+let winMessage = document.querySelector('.win-message');
+
 function getComputerChoice() {
     const choices = ['rock', 'paper', 'scissors'];
     return computerChoice = choices[(Math.floor(Math.random() * choices.length))];
@@ -49,7 +51,7 @@ function playRound(playerSelection, computerSelection) {
     else {
         result = "Invalid choice";
     }
-    return result;
+    winMessage.textContent = result;
 }
 
 
