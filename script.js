@@ -73,16 +73,15 @@ function playGame() {
         paperButton.disabled = true;
         scissorsButton.disabled = true;
 
+        const playAgainButton = document.querySelector('.play-again');
+        playAgainButton.style.display = 'block';
+
         if (computerScore === 5) {
             winMessage.textContent = "Computer wins!"
         }
         else {
             winMessage.textContent = "Player wins!"
         }
-        playAgainButton = document.createElement('button');
-        playAgainButton.textContent = "Play again?";
-        textBox.appendChild(playAgainButton);
-        playAgainButton.addEventListener('click', resetScore);
     }
 
     function resetScore() {
@@ -93,10 +92,12 @@ function playGame() {
         playRound(playerSelection, getComputerChoice());
         updateScore();
     }
-    
+
     rockButton.addEventListener('click', () => handlePlayerChoice('rock'));
     paperButton.addEventListener('click', () => handlePlayerChoice('paper'));
     scissorsButton.addEventListener('click', () => handlePlayerChoice('scissors'));
+
+    document.querySelector('.play-again').addEventListener('click', resetScore);
 }
 
 playGame();
