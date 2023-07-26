@@ -8,7 +8,7 @@ const roundNumberBox = document.querySelector('.round-number');
 const playerScoreBox = document.querySelector('.player-score');
 const computerScoreBox = document.querySelector('.computer-score');
 
-function playGame() {
+function newGame() {
     let playerScore = 0;
     let computerScore = 0;
     let roundNumber = 0;
@@ -62,13 +62,13 @@ function playGame() {
     }
 
     function updateScore() {
-        if (playerScore >= 5 || computerScore >= 5) newGame();
+        if (playerScore >= 5 || computerScore >= 5) endGame();
         playerScoreBox.textContent = playerScore;
         computerScoreBox.textContent = computerScore;
         roundNumberBox.textContent = roundNumber;
     }
 
-    function newGame() {
+    function endGame() {
         rockButton.disabled = true;
         paperButton.disabled = true;
         scissorsButton.disabled = true;
