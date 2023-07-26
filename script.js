@@ -100,4 +100,4 @@ function newGame() {
     document.querySelector('.play-again').addEventListener('click', resetScore);
 }
 
-playGame();
+newGame();
