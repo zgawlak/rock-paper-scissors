@@ -1,12 +1,12 @@
-let rockButton = document.querySelector('.rock');
-let paperButton = document.querySelector('.paper');
-let scissorsButton = document.querySelector('.scissors');
+const rockButton = document.querySelector('.rock');
+const paperButton = document.querySelector('.paper');
+const scissorsButton = document.querySelector('.scissors');
 
-let textBox = document.querySelector('.text');
-let winMessage = document.querySelector('.win-message');
-let roundNumberBox = document.querySelector('.round-number');
-let playerScoreBox = document.querySelector('.player-score');
-let computerScoreBox = document.querySelector('.computer-score');
+const textBox = document.querySelector('.text');
+const winMessage = document.querySelector('.win-message');
+const roundNumberBox = document.querySelector('.round-number');
+const playerScoreBox = document.querySelector('.player-score');
+const computerScoreBox = document.querySelector('.computer-score');
 
 function playGame() {
     let playerScore = 0;
