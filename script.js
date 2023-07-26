@@ -1,6 +1,10 @@
 let playerScore;
 let computerScore;
 
+let rockButton = document.querySelector('.rock');
+let paperButton = document.querySelector('.paper');
+let scissorsButton = document.querySelector('.scissors');
+
 function getComputerChoice() {
     const choices = ['rock', 'paper', 'scissors'];
     return computerChoice = choices[(Math.floor(Math.random() * choices.length))];
@@ -60,14 +64,14 @@ function game() {
     console.log("Final score: \nPlayer - " + playerScore + "\nComputer - " + computerScore + "\nTie - " + tie);
 }
 
-document.querySelector('.rock').addEventListener('click', () => {
+rockButton.addEventListener('click', () => {
     playRound('rock', getComputerChoice());
 })
 
-document.querySelector('.paper').addEventListener('click', () => {
+paperButton.addEventListener('click', () => {
     playRound('paper', getComputerChoice());
 })
 
-document.querySelector('.scissors').addEventListener('click', () => {
+scissorsButton.addEventListener('click', () => {
     playRound('scissors', getComputerChoice());
 })
