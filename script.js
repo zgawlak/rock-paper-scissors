@@ -57,6 +57,12 @@ function playRound(playerSelection, computerSelection) {
     winMessage.textContent = result;
 }
 
+function updateScore() {
+    if (playerScore >= 5 || computerScore >= 5) newGame();
+    playerScoreBox.textContent = playerScore;
+    computerScoreBox.textContent = computerScore;
+}
+
 function newGame() {
     rockButton.disabled = true;
     paperButton.disabled = true;
@@ -74,6 +80,7 @@ function newGame() {
     playAgainButton.addEventListener('click', resetScore);
 }
 
+
 function resetScore() {
     rockButton.disabled = false;
     paperButton.disabled = false;
@@ -82,15 +89,9 @@ function resetScore() {
     computerScore = 0;
     playerScore = 0;
     updateScore();
-    
+
     winMessage.textContent = "";
     textBox.removeChild(playAgainButton);
-}
-
-function updateScore() {
-    if (playerScore >= 5 || computerScore >= 5) newGame();
-    playerScoreBox.textContent = playerScore;
-    computerScoreBox.textContent = computerScore;
 }
 
 rockButton.addEventListener('click', () => {
