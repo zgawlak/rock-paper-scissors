@@ -6,6 +6,8 @@ let paperButton = document.querySelector('.paper');
 let scissorsButton = document.querySelector('.scissors');
 
 let winMessage = document.querySelector('.win-message');
+let playerScoreBox = document.querySelector('.player-score');
+let computerScoreBox = document.querySelector('.computer-score');
 
 function getComputerChoice() {
     const choices = ['rock', 'paper', 'scissors'];
@@ -52,18 +54,6 @@ function playRound(playerSelection, computerSelection) {
         result = "Invalid choice";
     }
     winMessage.textContent = result;
-}
-
-
-function game() {
-    playerScore = 0;
-    computerScore = 0;
-    tie = 0;
-    // for (let i = 0; i < 5; i++) {
-    let playerSelection = prompt("Choose rock, paper, or scissors:");
-    console.log(playRound(playerSelection, getComputerChoice()));
-    // }
-    console.log("Final score: \nPlayer - " + playerScore + "\nComputer - " + computerScore + "\nTie - " + tie);
 }
 
 rockButton.addEventListener('click', () => {
