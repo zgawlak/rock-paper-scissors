@@ -60,3 +60,15 @@ function game() {
     // }
     console.log("Final score: \nPlayer - " + playerScore + "\nComputer - " + computerScore + "\nTie - " + tie);
 }
+
+document.querySelector('.rock').addEventListener('click', () => {
+    playRound('rock', getComputerChoice());
+})
+
+document.querySelector('.paper').addEventListener('click', () => {
+    playRound('paper', getComputerChoice());
+})
+
+document.querySelector('.scissors').addEventListener('click', () => {
+    playRound('scissors', getComputerChoice());
+})
