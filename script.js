@@ -4,14 +4,12 @@ const scissorsButton = document.querySelector('.scissors');
 
 const textBox = document.querySelector('.text');
 const winMessage = document.querySelector('.win-message');
-const roundNumberBox = document.querySelector('.round-number');
 const playerScoreBox = document.querySelector('.player-score');
 const computerScoreBox = document.querySelector('.computer-score');
 
 function newGame() {
     let playerScore = 0;
     let computerScore = 0;
-    let roundNumber = 0;
 
     function getComputerChoice() {
         const choices = ['rock', 'paper', 'scissors'];
@@ -57,7 +55,6 @@ function newGame() {
         else {
             result = "Invalid choice";
         }
-        roundNumber++;
         winMessage.textContent = result;
     }
 
@@ -65,7 +62,6 @@ function newGame() {
         if (playerScore >= 5 || computerScore >= 5) endGame();
         playerScoreBox.textContent = playerScore;
         computerScoreBox.textContent = computerScore;
-        roundNumberBox.textContent = roundNumber;
     }
 
     function endGame() {
