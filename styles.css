@@ -7,6 +7,11 @@ body {
     margin: 0;
     padding: 0;
     height: 80vh;
+    background-color: #fff;
+}
+
+h1 {
+    color: #8fb3ff;
 }
 
 .container {
@@ -22,14 +27,13 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 3px solid blue;
-    border-radius: 5px;
     padding: 50px;
 }
 
 .play-icon {
     background-color: transparent;
     border: none;
+    color: #d41d6d;
     transition: transform .3s ease;
 }
 
@@ -38,12 +42,17 @@ body {
     transform: scale(1.1);
 }
 
+.play-icon:disabled {
+    transform: none;
+    cursor: default;
+}
+
 .text {
     width: 75vw;
-    border: 3px solid blue;
-    border-radius: 5px;
     padding: 50px;
     text-align: center;
+    background-color: #ebf1ff;
+    border-radius: 10px;
 }
 
 .counters {
@@ -57,7 +66,8 @@ body {
 }
 
 .play-again {
-    font-size: 32px;
+    font-size: 28px;
     padding: 10px;
     margin: 0 auto 50px auto;
+    cursor: pointer;
 }
