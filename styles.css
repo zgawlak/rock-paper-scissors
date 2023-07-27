@@ -2,16 +2,21 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
 body {
     font-size: 22px;
     margin: 0;
     padding: 0;
     height: 80vh;
     background-color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1 {
+.title {
     color: #8fb3ff;
+    font-family: 'Fredoka';
+    letter-spacing: 5px;
 }
 
 .container {
@@ -45,6 +50,7 @@ h1 {
 .play-icon:disabled {
     transform: none;
     cursor: default;
+    color: grey;
 }
 
 .text {
@@ -60,14 +66,31 @@ h1 {
 }
 
 .scores {
-    margin-top: 25px;
+    margin-top: 32px;
     display: flex;
     justify-content: space-around;
+    font-family: 'Fredoka';
+    font-size: 24px;
+}
+
+.player-score,
+.computer-score {
+    font-size: 32px;
 }
 
 .play-again {
     font-size: 28px;
-    padding: 10px;
-    margin: 0 auto 50px auto;
+    padding: 15px;
+    margin: 50px auto 0 auto;
     cursor: pointer;
+    font-family: 'Fredoka';
+    color: #fff;
+    background-color: #d41d6d;
+    border-radius: 5px;
+    border: transparent;
+    transition: transform 0.3s;
+}
+
+.play-again:hover {
+    transform: scale(1.1);
 }
