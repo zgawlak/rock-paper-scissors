@@ -4,6 +4,8 @@
 
 body {
     font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -14,11 +16,34 @@ body {
     height: 100vh;
 }
 
-button {
+.buttons {
+    width: 75vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid blue;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+.buttons button {
     background-color: transparent;
     border: none;
     cursor: pointer;
     width: 75px;
     height: 75px;
+}
+
+.text {
+    width: 75vw;
+    border: 3px solid blue;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+.play-again {
+    font-size: 32px;
+    padding: 10px;
+
 }
 
