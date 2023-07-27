@@ -8,7 +8,7 @@ body {
     font-size: 22px;
     margin: 0;
     padding: 0;
-    height: 80vh;
+    height: 100vh;
     background-color: #fff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -37,6 +37,7 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 50px;
+    gap: 16px;
 }
 
 .play-icon {
@@ -46,7 +47,8 @@ body {
     transition: transform .3s ease;
 }
 
-.play-icon:hover {
+.play-icon:hover,
+.play-icon:focus {
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -86,7 +88,6 @@ body {
 .play-again {
     font-size: 28px;
     padding: 15px;
-    margin: 50px auto 0 auto;
     cursor: pointer;
     font-family: 'Fredoka';
     color: #fff;
