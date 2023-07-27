@@ -54,7 +54,8 @@ function newGame() {
         }
         else {
             result = "Invalid choice";
-        }
+        }     
+        
         winMessage.textContent = result;
     }
 
