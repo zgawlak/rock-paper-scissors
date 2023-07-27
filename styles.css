@@ -13,18 +13,22 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
 .title {
     color: #8fb3ff;
     font-family: 'Fredoka';
     letter-spacing: 5px;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 100%;
+.description {
+    text-align: center;
 }
 
 .buttons {
@@ -76,6 +80,7 @@ body {
 .player-score,
 .computer-score {
     font-size: 32px;
+    color: #d41d6d;
 }
 
 .play-again {
