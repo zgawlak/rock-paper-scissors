@@ -6,6 +6,14 @@ body {
     font-size: 22px;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
 button {
     background-color: transparent;
     border: none;
@@ -13,3 +21,4 @@ button {
     width: 75px;
     height: 75px;
 }
+
