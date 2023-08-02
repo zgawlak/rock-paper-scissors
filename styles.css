@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-color: #fff;
+    background-color: #f3fbf9;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -19,10 +19,11 @@ body {
     align-items: center;
     justify-content: space-around;
     height: 100%;
+    padding: 50px 0;
 }
 
 .title {
-    color: #8fb3ff;
+    color: #35ac88;
     font-family: 'Fredoka';
     letter-spacing: 5px;
 }
@@ -44,7 +45,8 @@ body {
 .play-icon {
     background-color: transparent;
     border: none;
-    color: #d41d6d;
+    color: #63cfaf;
+    background-color: #fff;
     border: 2px solid black;
     padding: 20px;
     border-radius: 5px;
@@ -73,7 +75,7 @@ body {
     width: 50%;
     padding: 50px;
     text-align: center;
-    background-color: #ebf1ff;
+    background-color: #c1ecdf;
     border-radius: 10px;
     transition: background-color 1s ease;
 }
@@ -94,7 +96,8 @@ body {
 .player-score,
 .computer-score {
     font-size: 32px;
-    color: #d41d6d;
+    color: #fff;
+    text-shadow: 1px 1px 10px #000;
 }
 
 .play-again {
@@ -103,7 +106,7 @@ body {
     cursor: pointer;
     font-family: 'Fredoka';
     color: #fff;
-    background-color: #d41d6d;
+    background-color: #c41c4f;
     border-radius: 5px;
     border: transparent;
     transition: transform 0.3s;
