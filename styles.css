@@ -44,6 +44,10 @@ body {
     background-color: transparent;
     border: none;
     color: #d41d6d;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    width: 125px;
     transition: transform .3s ease;
 }
 
@@ -51,6 +55,7 @@ body {
 .play-icon:focus {
     cursor: pointer;
     transform: scale(1.1);
+    box-shadow: 0 0 10px #aaa;
 }
 
 .play-icon:focus {
