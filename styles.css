@@ -120,6 +120,7 @@ body {
 
     .buttons {
         flex-wrap: wrap;
+        gap: 32px;
     }
 }
     
