@@ -21,9 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    height: 100%;
-    padding: 50px 0;
+    justify-content: space-between;
 }
 
 .title {
@@ -124,7 +122,7 @@ body {
     border-radius: 5px;
     border: transparent;
     transition: transform 0.3s;
-    margin-top: 50px;
+    margin: 50px 0;
 }
 
 .play-again:hover {
@@ -132,10 +130,6 @@ body {
 }
 
 @media only screen and (max-width: 1000px) {
-    .text {
-        width: 75%;
-    }
-
     .buttons {
         flex-wrap: wrap;
         gap: 32px;
