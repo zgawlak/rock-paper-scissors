@@ -13,7 +13,7 @@ body {
     font-size: 22px;
     margin: 0;
     padding: 0;
-    background-color: #f3fbf9;
+    background-color: #fff;
     font-family: 'Lato', sans-serif;
 }
 
@@ -25,7 +25,7 @@ body {
 }
 
 .title {
-    color: #35ac88;
+    color: #87b0ae;
     font-size: 48px;
     text-align: center;
 }
@@ -53,7 +53,7 @@ body {
 .play-icon {
     background-color: transparent;
     border: none;
-    color: #63cfaf;
+    color: #5d8e8b;
     background-color: #fff;
     border: 2px solid black;
     padding: 20px;
@@ -101,7 +101,7 @@ body {
     justify-content: space-around;
     font-size: 32px;
     gap: 32px;
-    color: #35ac88;
+    color: #87b0ae;
 }
 
 .player-score,
