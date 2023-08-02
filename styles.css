@@ -2,15 +2,19 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html,
+body {
+    height: 100%;
+}
 
 body {
     font-size: 22px;
     margin: 0;
     padding: 0;
-    height: 100vh;
     background-color: #f3fbf9;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .container {
@@ -24,12 +28,18 @@ body {
 
 .title {
     color: #35ac88;
-    font-family: 'Fredoka';
-    letter-spacing: 5px;
+    font-size: 48px;
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline wavy 3px #000;
+    text-underline-offset: 5px;
 }
 
 .description {
     text-align: center;
+    padding: 0 20px;
 }
 
 .buttons {
@@ -69,15 +79,18 @@ body {
     transform: none;
     cursor: default;
     color: grey;
+    box-shadow: none;
 }
 
 .text {
     width: 50%;
     padding: 50px;
     text-align: center;
-    background-color: #c1ecdf;
-    border-radius: 10px;
     transition: background-color 1s ease;
+}
+
+.win-message {
+    transition: transform .3s ease;
 }
 
 .counters {
@@ -88,28 +101,30 @@ body {
     margin-top: 32px;
     display: flex;
     justify-content: space-around;
-    font-family: 'Fredoka';
-    font-size: 24px;
-    gap: 16px;
+    font-size: 32px;
+    gap: 32px;
+    color: #35ac88;
 }
 
 .player-score,
 .computer-score {
-    font-size: 32px;
-    color: #fff;
-    text-shadow: 1px 1px 10px #000;
+    font-size: 48px;
+    padding-top: 16px;
+    display: block;
+    color: #000;
 }
+
 
 .play-again {
     font-size: 28px;
     padding: 15px;
     cursor: pointer;
-    font-family: 'Fredoka';
     color: #fff;
     background-color: #c41c4f;
     border-radius: 5px;
     border: transparent;
     transition: transform 0.3s;
+    margin-top: 50px;
 }
 
 .play-again:hover {
@@ -125,5 +140,8 @@ body {
         flex-wrap: wrap;
         gap: 32px;
     }
+
+    .scores {
+        flex-wrap: wrap;
+    }
 }
-    

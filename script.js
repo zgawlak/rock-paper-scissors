@@ -75,11 +75,13 @@ function newGame() {
 
         if (computerScore === 5) {
             winMessage.textContent = "Computer wins!"
-            textBox.style.backgroundColor = "#ffcfd2";
+            winMessage.style.textShadow = "0 0 15px #ffcfd2";
+            winMessage.style.transform = "scale(1.5)";
         }
         else {
             winMessage.textContent = "You win!"
-            textBox.style.backgroundColor = "#b9fbc0";
+            winMessage.style.textShadow = "0 0 15px #b9fbc0";
+            winMessage.style.transform = "scale(1.5)";
         }
     }
 
